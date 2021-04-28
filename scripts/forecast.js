@@ -17,8 +17,6 @@ const getWeather = async (cityId) => {
 
     const data = await (await fetch(base + query)).json()
 
-    return data
+    return data[0]
 }
 
-// getWeather('manchester')
-//     .then(data => console.log(data))
